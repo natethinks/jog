@@ -12,7 +12,7 @@ function zshaddhistory() {
 	echo "${1%%$'\n'}|${PWD}   " >> ~/.zsh_history_ext
 }
 ```
-2. Download or copy the `jog` script from this repo and place it somewhere in your path. 
+2. Download or copy the `jog` script from this repo and place it somewhere in your `$PATH`. 
 
 3. Restart your current terminal sessions for changes to take effect. `exec $SHELL`
 
