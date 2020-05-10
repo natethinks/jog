@@ -12,14 +12,16 @@ function zshaddhistory() {
 	echo "${1%%$'\n'}|${PWD}   " >> ~/.zsh_history_ext
 }
 ```
-This function outputs each command you run and the current directory into a new file called `.zsh_history_ext`.
-
 Download or copy the `jog` script from this repo and place it somewhere in your path. 
 
-There's no way to retroactively store the directory in which a command was run, so this tool will only work from this point forward.
+Restart your current terminal sessions for changes to take effect. `exec $SHELL`
+
+Use `jog` whenever you find yourself lost and confused.
+
+It's not possible to retroactively store the directory in which a command was run, so this tool will only work from this point forward.
 
 ## Todo List
 Contributions and feature requests are welcome
 
-- Add bash support
+- Add support for other shells: bash, fish.
 - Automatically truncate `.zsh_history_ext` when `HISTSIZE` is surpassed
