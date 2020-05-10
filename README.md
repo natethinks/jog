@@ -6,19 +6,19 @@ Simple script for zsh users that prints the last few commands you ran in the cur
 
 ## Usage
 
-Add this function to your `.zshrc`
+1. Add this function to your `.zshrc`
 ```
 function zshaddhistory() {
 	echo "${1%%$'\n'}|${PWD}   " >> ~/.zsh_history_ext
 }
 ```
-Download or copy the `jog` script from this repo and place it somewhere in your path. 
+2. Download or copy the `jog` script from this repo and place it somewhere in your path. 
 
-Restart your current terminal sessions for changes to take effect. `exec $SHELL`
+3. Restart your current terminal sessions for changes to take effect. `exec $SHELL`
 
-Use `jog` whenever you find yourself lost and confused.
+4. Use `jog` whenever you find yourself lost and confused.
 
-It's not possible to retroactively store the directory in which a command was run, so this tool will only work from this point forward.
+It's not possible to retroactively store the directory in which a command was run, so **this tool will only work from this point forward.**
 
 ## Todo List
 Contributions and feature requests are welcome
