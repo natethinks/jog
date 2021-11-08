@@ -1,6 +1,6 @@
 # jog
 
-Simple script for zsh users that prints the last few commands you ran in the current directory.
+Print the last 10 commands you ran in the current directory
 
 ![Gif of Fezzik jogging memory](https://media1.giphy.com/media/5PNM2yFGbUVK8/giphy.gif?cid=ecf05e47a644d0cfbeab72eab8ea67edb714352983ffd82b&rid=giphy.gif)
 
