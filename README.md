@@ -9,7 +9,9 @@ Print the last 10 commands you ran in the current directory
 1. Add this function to your `.zshrc`
 ```
 function zshaddhistory() {
+  if [[ "${1}" != ${~HISTORY_IGNORE} ]]; then
 	echo "${1%%$'\n'}⋮${PWD}   " >> ~/.zsh_history_ext
+  fi
 }
 ```
 2. Download or copy the `jog` script from this repo and place it somewhere in your `$PATH`. 
