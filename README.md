@@ -10,7 +10,9 @@ Print the last 10 commands you ran in the current directory
 
 ```
 function zshaddhistory() {
+  if [[ "${1}" != ${~HISTORY_IGNORE} ]]; then
 	echo "${1%%$'\n'}⋮${PWD}   " >> ~/.zsh_history_ext
+  fi
 }
 ```
 
